@@ -24,6 +24,19 @@ footer{padding:28px 0;border-top:1px solid #ffffff12;color:#778272;font-size:11p
 @media(max-width:520px){.brand-logo{height:40px}.brand-text{font-size:16px}.footer-logo{width:145px}.wrap{width:min(100% - 30px,1160px)}.nav{height:68px}.navlinks{top:68px}.hero{padding-top:120px;min-height:680px}h1{letter-spacing:-3px}.hero-bottom{margin-top:52px}.hero-bottom strong{font-size:19px}section{padding:78px 0}.formbox{padding:21px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}.video-card:first-child{min-height:360px}}
 </style>
 </head>
+  < of </head><style>
+/* Show every video fully (no cropping); blurred frame fills any empty space */
+.video-grid{grid-template-rows:auto 1fr;align-items:stretch}
+.video-grid .video-card{min-height:0}
+.video-grid .video-card:nth-child(1){grid-row:span 2;aspect-ratio:1/1}
+.video-grid .video-card:nth-child(2){aspect-ratio:16/9}
+.video-grid .video-card:nth-child(3){min-height:380px}
+.video-grid .video-card video{object-fit:contain;background:transparent}
+.video-grid .video-card .poster{filter:blur(24px) brightness(.5);transform:scale(1.3)}
+.video-grid .video-card:hover .poster,.video-grid .video-card:hover video{transform:none}
+@media(max-width:800px){.video-grid{grid-template-rows:none}.video-grid .video-card:nth-child(1){grid-row:auto}.video-grid .video-card:nth-child(3){aspect-ratio:3/4;min-height:0}}
+</style>
+
 <body>
 <div class="noise"></div>
 <header><div class="wrap nav">
@@ -136,3 +149,4 @@ const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entr
 document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
 </script>
 </body></html>
+
