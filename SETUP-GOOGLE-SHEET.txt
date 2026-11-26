@@ -1,0 +1,19 @@
+SEND CUSTOMER DETAILS TO GOOGLE SHEET (EXCEL) + WHATSAPP  — one-time setup, ~5 minutes, free
+
+1. Open sheets.google.com  ->  Blank spreadsheet. Name it "Kreative Nova Enquiries".
+2. Menu: Extensions -> Apps Script.
+3. Delete the sample code, paste everything from apps-script.gs, click Save (disk icon).
+4. Click Deploy -> New deployment -> gear icon -> choose "Web app".
+     Execute as:        Me
+     Who has access:    Anyone
+   Click Deploy. Allow permissions (Advanced -> Go to project (unsafe) -> Allow).
+5. Copy the "Web app URL" (it ends with /exec).
+6. Open index.html in a text editor, find:   const SHEET_URL = "";
+   Paste the URL between the quotes:       const SHEET_URL = "https://script.google.com/macros/s/XXXX/exec";
+7. Save and upload index.html to GitHub again.
+
+Test: submit the form on your site. A new row appears in the sheet, you get an email, WhatsApp opens, and the thank-you page shows.
+
+Excel file: in the sheet, File -> Download -> Microsoft Excel (.xlsx) any time.
+
+If you change the Apps Script code later: Deploy -> Manage deployments -> edit -> New version -> Deploy (the URL stays the same).

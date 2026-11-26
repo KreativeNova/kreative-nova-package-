@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080a08">
+<title>Kreative Nova — Creative That Moves Brands</title>
+<meta name="description" content="Kreative Nova — video production, editing, branding and social media packages for ambitious brands.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080a08;--panel:#111511;--panel2:#171d17;--text:#f4f7f1;--muted:#9ca79a;--green:#b7ff3c;--line:rgba(183,255,60,.18);--font:'DM Sans',sans-serif;--display:'Space Grotesk',sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden}a{color:inherit;text-decoration:none}button,input,textarea,select{font:inherit}.wrap{width:min(1160px,calc(100% - 44px));margin:auto}.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:20;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+header{position:fixed;z-index:30;top:0;left:0;right:0;background:rgba(8,10,8,.78);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;height:58px}.brand{gap:12px}.brand-logo{display:block;height:46px;width:auto}.brand-text{font:700 19px var(--display);letter-spacing:1.5px;color:#f4f7f1}.brand-text b{color:#f5d90a;font-weight:700}.footer-brand{display:flex;align-items:center}.footer-logo{width:130px;height:auto}.navlinks{display:flex;gap:30px;color:#c2c9bd;font-size:13px}.navlinks a:hover{color:var(--green)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--green);color:#10150a;padding:13px 19px;border-radius:5px;font-weight:700;font-size:13px;border:1px solid var(--green);transition:.25s;cursor:pointer}.nav-cta:hover,.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px #b7ff3c30}.btn.outline{background:transparent;color:var(--text);border-color:#59634f}.btn.outline:hover{border-color:var(--green);color:var(--green)}.menu{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{min-height:760px;display:flex;align-items:center;padding:145px 0 90px;position:relative;isolation:isolate;overflow:hidden}.hero:before{content:"";position:absolute;width:650px;height:650px;right:-180px;top:80px;background:radial-gradient(circle,#9be92a20,transparent 68%);z-index:-1}.hero:after{content:"";position:absolute;z-index:-1;right:2%;top:50%;transform:translateY(-50%);width:min(54vw,650px);height:min(54vw,650px);background:url('logo-full.png') center/contain no-repeat;opacity:.2;pointer-events:none;filter:drop-shadow(0 0 40px rgba(245,217,10,.15))}.eyebrow{display:flex;align-items:center;gap:10px;color:var(--green);font-size:11px;letter-spacing:2.4px;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:28px;height:1px;background:var(--green)}h1,h2,h3,p{margin-top:0}h1{font:600 clamp(52px,8vw,100px)/.98 var(--display);letter-spacing:-5px;max-width:850px;margin:25px 0}.accent{color:var(--green)}.hero-copy{max-width:540px;color:#aab4a7;font-size:16px;line-height:1.8}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}.hero-bottom{display:flex;gap:45px;margin-top:72px;color:#849080;font-size:11px;text-transform:uppercase;letter-spacing:1.5px}.hero-bottom strong{display:block;color:#f4f7f1;font:600 22px var(--display);letter-spacing:-.5px;margin-bottom:5px}.scroll-cue{position:absolute;right:0;bottom:60px;color:#7f8b7b;font-size:10px;letter-spacing:2px;writing-mode:vertical-rl}
+section{padding:110px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:30px;margin-bottom:42px}.section-head h2{font:600 clamp(36px,5vw,58px)/1.04 var(--display);letter-spacing:-2.5px;margin:13px 0 0}.section-head p{max-width:360px;color:var(--muted);line-height:1.7;font-size:14px;margin:0}.showcase{background:#0c100c;border-top:1px solid #ffffff0b;border-bottom:1px solid #ffffff0b}.video-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.video-card{position:relative;overflow:hidden;background:#1a2118;border-radius:9px;min-height:300px;isolation:isolate;cursor:pointer}.video-card:first-child{grid-row:span 2;min-height:620px}.video-card video,.video-card .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .7s,opacity .4s}.video-card video{opacity:1;z-index:0;background:#000}.video-card.paused .play{opacity:1}.video-card.playing .play{opacity:.0}.play{transition:opacity .3s}.video-card .sound{position:absolute;z-index:3;top:16px;right:16px;width:38px;height:38px;border-radius:50%;border:1px solid #ffffff80;background:#00000066;color:#fff;font-size:15px;cursor:pointer;backdrop-filter:blur(6px)}.video-card:hover video,.video-card:hover .poster{transform:scale(1.04)}.poster{background-size:cover;background-position:center;filter:brightness(.72)}.video-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88));z-index:1}.video-info{position:absolute;z-index:2;left:25px;right:25px;bottom:23px;display:flex;align-items:end;justify-content:space-between}.video-info small{color:var(--green);letter-spacing:1.8px;font-size:10px}.video-info h3{font:600 25px var(--display);margin:7px 0 0}.play{width:46px;height:46px;border:1px solid #ffffff9c;border-radius:50%;display:grid;place-items:center;color:white;background:#ffffff16;backdrop-filter:blur(8px);font-size:15px}.video-note{margin-top:20px;color:#839080;font-size:11px}
+.packages{position:relative}.package-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.package{background:var(--panel);border:1px solid #ffffff12;border-radius:9px;padding:29px;position:relative;transition:.3s}.package:hover{transform:translateY(-7px);border-color:#b7ff3c77}.package.featured{background:linear-gradient(160deg,#1c2815,#101510 65%);border-color:var(--green)}.tag{display:inline-block;color:var(--green);font-size:10px;letter-spacing:1.8px;text-transform:uppercase;font-weight:700}.package h3{font:600 29px var(--display);margin:16px 0 8px}.package .desc{color:var(--muted);font-size:13px;line-height:1.7;min-height:44px}.price{font:600 27px var(--display);margin:24px 0 7px}.price small{font:400 11px var(--font);color:#9ba696}.price small.from{display:block;margin-bottom:6px;text-transform:uppercase;letter-spacing:1.6px;font-size:10px;color:var(--green)}.package ul{list-style:none;padding:18px 0 10px;margin:0;border-top:1px solid #ffffff16}.package li{color:#c0c9bc;font-size:13px;padding:8px 0;display:flex;gap:10px}.package li:before{content:"✓";color:var(--green);font-weight:700}.package .btn{width:100%;margin-top:20px}.package-foot{font-size:11px;color:#778272;margin-top:19px}
+.services-strip{padding:35px 0;border-top:1px solid #ffffff12;border-bottom:1px solid #ffffff12;overflow:hidden}.marquee{display:flex;gap:48px;white-space:nowrap;animation:marquee 25s linear infinite;color:#788473;font:600 14px var(--display);letter-spacing:2px;text-transform:uppercase}.marquee span{color:var(--green)}@keyframes marquee{to{transform:translateX(-50%)}}
+.contact{background:radial-gradient(ellipse at 10% 100%,#b7ff3c12,transparent 45%),#0d110d}.contact{position:relative;isolation:isolate;overflow:hidden}.contact:before{content:"";position:absolute;z-index:-1;right:-6%;bottom:-8%;width:min(60vw,560px);height:min(60vw,560px);background:url('logo-full.png') center/contain no-repeat;opacity:.07;pointer-events:none}.contact-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:70px}.contact h2{font:600 clamp(42px,6vw,68px)/1 var(--display);letter-spacing:-3px;margin:18px 0}.contact-copy{color:var(--muted);line-height:1.8;font-size:14px;max-width:390px}.contact-links{display:grid;gap:14px;margin-top:35px}.contact-links a{color:#dce4d7;font-size:14px}.contact-links span{color:var(--green);margin-right:10px}.formbox{background:#121812;border:1px solid #ffffff14;padding:30px;border-radius:9px}.formbox h3{font:600 24px var(--display);margin-bottom:8px}.formbox>p{font-size:12px;color:var(--muted);margin-bottom:25px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:8px}.field.full{grid-column:1/-1}.field label{font-size:11px;color:#b7c1b1}.field input,.field textarea,.field select{width:100%;background:#090d09;border:1px solid #303a2d;border-radius:4px;padding:13px;color:white;outline:none;font-size:13px}.field input:focus,.field textarea:focus,.field select:focus{border-color:var(--green)}.field textarea{min-height:100px;resize:vertical}.formbox button{width:100%;margin-top:18px}.form-note{font-size:10px;color:#788474;margin-top:12px;line-height:1.6}
+footer{padding:28px 0;border-top:1px solid #ffffff12;color:#778272;font-size:11px}.footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center}.footer-brand{font:700 17px var(--display);color:white}.footer-brand span{color:var(--green)}.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.reveal.visible{opacity:1;transform:none}.wa-float{position:fixed;z-index:25;right:23px;bottom:23px;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#0b1007;font-size:23px;box-shadow:0 8px 28px #0008;transition:.25s}.wa-float:hover{transform:scale(1.08)}
+@media(max-width:800px){.hero:after{right:-12%;top:58%;width:78vw;height:78vw;opacity:.12}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:#0c100c;padding:22px;flex-direction:column;gap:20px;border-bottom:1px solid #ffffff15}.navlinks.open{display:flex}.nav-cta{display:none}.menu{display:block}.hero{min-height:690px}.hero-bottom{gap:25px;flex-wrap:wrap}.section-head{display:block}.section-head p{margin-top:18px}.video-grid{grid-template-columns:1fr}.video-card:first-child{grid-row:auto;min-height:430px}.video-card{min-height:300px}.package-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr;gap:38px}.scroll-cue{display:none}}
+@media(max-width:520px){.brand-logo{height:40px}.brand-text{font-size:16px}.footer-logo{width:145px}.wrap{width:min(100% - 30px,1160px)}.nav{height:68px}.navlinks{top:68px}.hero{padding-top:120px;min-height:680px}h1{letter-spacing:-3px}.hero-bottom{margin-top:52px}.hero-bottom strong{font-size:19px}section{padding:78px 0}.formbox{padding:21px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.footer-inner{align-items:flex-start;flex-direction:column}.video-card:first-child{min-height:360px}}
+</style>
+</head>
+<body>
+<div class="noise"></div>
+<header><div class="wrap nav">
+  <a class="brand" href="#home" aria-label="Kreative Nova home"><img class="brand-logo" src="logo-mark.png" alt="Kreative Nova logo"><span class="brand-text">KREATIVE <b>NOVA</b></span></a>
+  <nav class="navlinks" id="navlinks"><a href="#work">Our Work</a><a href="#packages">Packages</a><a href="#contact">Contact</a></nav>
+  <a class="nav-cta" href="#contact">Let's Talk ↗</a>
+  <button class="menu" id="menu" aria-label="Open menu">☰</button>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap">
+  <div class="eyebrow reveal">Creative agency · Erode, India</div>
+  <h1 class="reveal">YOUR BRAND.<br>OUR <span class="accent">CREATIVE</span><br>ENERGY.</h1>
+  <p class="hero-copy reveal">We turn ideas into videos, visuals and digital experiences that make people stop, watch and remember your brand.</p>
+  <div class="hero-actions reveal"><a class="btn" href="#packages">Explore Packages ↗</a><a class="btn outline" href="#work">Watch Our Work ▶</a></div>
+  <div class="hero-bottom reveal"><div><strong>01</strong>Creative thinking</div><div><strong>02</strong>Powerful visuals</div><div><strong>03</strong>Brand growth</div></div>
+</div><div class="scroll-cue">SCROLL TO EXPLORE ↓</div></section>
+<div class="services-strip"><div class="marquee"><span>VIDEO EDITING ✳</span> CONTENT CREATION ✳ SOCIAL MEDIA ✳ BRANDING ✳ MOTION GRAPHICS ✳ DIGITAL MARKETING ✳ <span>VIDEO EDITING ✳</span> CONTENT CREATION ✳ SOCIAL MEDIA ✳ BRANDING ✳ MOTION GRAPHICS ✳ DIGITAL MARKETING ✳</div></div>
+<section class="showcase" id="work"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">Selected work</div><h2>MADE TO BE<br><span class="accent">WATCHED.</span></h2></div><p>A glimpse of the stories, campaigns and creative work we bring to life.</p></div>
+  <div class="video-grid">
+    <article class="video-card reveal"><div class="poster" style="background-image:url('videos/showreel.jpg')"></div><video muted loop autoplay playsinline preload="auto" poster="videos/showreel.jpg" src="videos/showreel.mp4"></video><button class="sound" type="button" aria-label="Toggle sound">🔇</button><div class="video-info"><div><small>01 / SHOWREEL</small><h3>Brand Stories</h3></div><div class="play">▶</div></div></article>
+    <article class="video-card reveal"><div class="poster" style="background-image:url('videos/product-ad.jpg')"></div><video muted loop autoplay playsinline preload="metadata" poster="videos/product-ad.jpg" src="videos/product-ad.mp4"></video><button class="sound" type="button" aria-label="Toggle sound">🔇</button><div class="video-info"><div><small>02 / PRODUCT FILM</small><h3>Product Ads</h3></div><div class="play">▶</div></div></article>
+    <article class="video-card reveal"><div class="poster" style="background-image:url('videos/reel-edit.jpg')"></div><video muted loop autoplay playsinline preload="metadata" poster="videos/reel-edit.jpg" src="videos/reel-edit.mp4"></video><button class="sound" type="button" aria-label="Toggle sound">🔇</button><div class="video-info"><div><small>03 / SOCIAL CONTENT</small><h3>Reels &amp; Motion</h3></div><div class="play">▶</div></div></article>
+  </div>
+  <p class="video-note">Videos autoplay muted — tap the 🔇 button on any video for sound.</p>
+</div></section>
+<section class="packages" id="packages"><div class="wrap">
+  <div class="section-head reveal"><div><div class="eyebrow">Simple. Clear. Creative.</div><h2>FIND YOUR<br><span class="accent">PACKAGE.</span></h2></div><p>Choose the level of creative support your business needs. Final price depends on your requirements — every package can be tailored to your goals.</p></div>
+  <div class="package-grid">
+    <article class="package reveal"><span class="tag">01 / Start strong</span><h3>Starter</h3><p class="desc">A smart starting point for businesses building their online presence.</p><div class="price"><small class="from">Starting from</small>₹5,000</div><ul><li>Creative consultation</li><li>Short-form video editing</li><li>Basic social media creatives</li><li>Content direction</li></ul><a class="btn outline package-btn" href="#contact" data-package="Starter">Enquire Now ↗</a></article>
+    <article class="package featured reveal"><span class="tag">02 / Most popular</span><h3>Growth</h3><p class="desc">Consistent content and stronger brand communication to grow your reach.</p><div class="price"><small class="from">Starting from</small>₹10,000</div><ul><li>Monthly content planning</li><li>Reels and promotional videos</li><li>Social media management</li><li>Creative designs</li><li>Performance review</li></ul><a class="btn package-btn" href="#contact" data-package="Growth">Enquire Now ↗</a></article>
+    <article class="package reveal"><span class="tag">03 / Full creative</span><h3>Premium</h3><p class="desc">A complete creative partner for brands ready to make a bigger impact.</p><div class="price"><small class="from">Starting from</small>₹15,000</div><ul><li>Complete content strategy</li><li>Advanced video production</li><li>Branding and design support</li><li>Social media management</li><li>Campaign creatives</li></ul><a class="btn outline package-btn" href="#contact" data-package="Premium">Enquire Now ↗</a></article>
+  </div>
+  <p class="package-foot">Need something different? We also create custom packages for your business.</p>
+</div></section>
+<section class="contact" id="contact"><div class="wrap contact-grid">
+  <div class="reveal"><div class="eyebrow">Let's create something</div><h2>HAVE A<br><span class="accent">PROJECT?</span></h2><p class="contact-copy">Tell us what you're building. We'll get back to you and help find the right creative solution for your brand.</p><div class="contact-links"><a href="https://wa.me/917871503577" id="direct-wa"><span>↗</span> WhatsApp us</a><a href="tel:+917871503577" id="direct-call"><span>↗</span> +91 78715 03577</a><a href="mailto:kreativenovaa@gmail.com"><span>✉</span> kreativenovaa@gmail.com</a><a href="https://instagram.com/kreativenova_official" target="_blank" rel="noopener"><span>↗</span> @kreativenova_official</a></div></div>
+  <form class="formbox reveal" id="enquiry"><h3>Start an enquiry</h3><p>Share a few details — WhatsApp will open with your message, and you'll see a confirmation page.</p><div class="form-grid">
+    <div class="field"><label for="name">Your name *</label><input id="name" name="name" required placeholder="Name"></div>
+    <div class="field"><label for="phone">Phone number *</label><input id="phone" name="phone" required inputmode="tel" placeholder="+91"></div>
+    <div class="field"><label for="business">Business / brand</label><input id="business" name="business" placeholder="Your brand name"></div>
+    <div class="field"><label for="package">Interested package</label><select id="package" name="package"><option value="Not sure yet">Select a package</option><option>Starter</option><option>Growth</option><option>Premium</option><option>Custom requirement</option></select></div>
+    <div class="field full"><label for="message">Tell us about your project</label><textarea id="message" name="message" placeholder="What do you need help with?"></textarea></div>
+  </div><button class="btn" type="submit">Send Enquiry on WhatsApp ↗</button><div class="form-note">By submitting, your details are sent to Kreative Nova and WhatsApp opens with your enquiry message ready to send.</div></form>
+</div></section>
+</main>
+<footer><div class="wrap footer-inner"><div class="footer-brand"><img class="footer-logo" src="logo-full.png" alt="Kreative Nova — Production Agency by Krishna, Gifts & More"></div><div>© <span id="year"></span> Kreative Nova. All rights reserved.</div><div>CREATIVITY THAT CONNECTS.</div></div></footer>
+<a class="wa-float" href="https://wa.me/917871503577" id="float-wa" aria-label="Chat on WhatsApp">✆</a>
+<script>
+// IMPORTANT: Replace this with your business WhatsApp number, country code included, digits only.
+const WHATSAPP_NUMBER = "917871503577";
+// Paste your Google Apps Script "Web app" URL here (see SETUP-GOOGLE-SHEET.txt). Leave empty to use WhatsApp only.
+const SHEET_URL = "";
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('menu').addEventListener('click',()=>document.getElementById('navlinks').classList.toggle('open'));
+document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navlinks').classList.remove('open')));
+document.querySelectorAll('.package-btn').forEach(btn=>btn.addEventListener('click',()=>{const p=btn.dataset.package;document.getElementById('package').value=p;}));
+function waUrl(message){return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;}
+['direct-wa','float-wa'].forEach(id=>document.getElementById(id).href=waUrl("Hi Kreative Nova! I would like to know more about your services."));
+document.getElementById('direct-call').href='tel:+'+WHATSAPP_NUMBER;
+document.getElementById('enquiry').addEventListener('submit',async e=>{
+  e.preventDefault();const form=e.currentTarget,d=new FormData(form),btn=form.querySelector('button[type=submit]');
+  const msg=`Hi Kreative Nova! I'd like to enquire about your services.\n\nName: ${d.get('name')}\nPhone: ${d.get('phone')}\nBusiness: ${d.get('business')||'Not provided'}\nPackage: ${d.get('package')}\nProject: ${d.get('message')||'I would like to discuss my requirements.'}`;
+  try{sessionStorage.setItem('kn_wa',waUrl(msg));}catch(_){}
+  // 1) Open WhatsApp right away (must happen inside the click so the browser allows it)
+  window.open(waUrl(msg),'_blank','noopener');
+  // 2) Save the enquiry as a new row in your Google Sheet (opens in Excel too)
+  if(SHEET_URL){
+    btn.disabled=true;btn.textContent='Sending…';
+    try{
+      await Promise.race([
+        fetch(SHEET_URL,{method:'POST',mode:'no-cors',keepalive:true,body:new URLSearchParams({name:d.get('name')||'',phone:d.get('phone')||'',business:d.get('business')||'',package:d.get('package')||'',message:d.get('message')||'',page:location.href})}),
+        new Promise(r=>setTimeout(r,3500))
+      ]);
+    }catch(_){}
+  }
+  // 3) Show the thank-you page
+  window.location.href='thank-you.html?name='+encodeURIComponent(d.get('name')||'');
+});
+// Autoplay videos: play when visible, pause when off-screen.
+const cards=[...document.querySelectorAll('.video-card')];
+cards.forEach(card=>{
+ const video=card.querySelector('video'),start=+card.dataset.start||0,snd=card.querySelector('.sound');
+ video.muted=true;video.defaultMuted=true;video.setAttribute('playsinline','');video.setAttribute('webkit-playsinline','');
+ card.userPaused=false;
+ const play=()=>{if(card.userPaused)return;const p=video.play();if(p&&p.catch)p.catch(()=>{});};
+ let seeked=false;
+ video.addEventListener('loadedmetadata',()=>{if(start&&!seeked&&video.duration>start+3){video.currentTime=start;}seeked=true;});
+ video.addEventListener('canplay',play);
+ video.addEventListener('playing',()=>{card.classList.add('playing');card.classList.remove('paused');});
+ video.addEventListener('pause',()=>{card.classList.remove('playing');card.classList.add('paused');});
+ video.addEventListener('error',()=>console.warn('Video failed to load:',video.currentSrc||video.src,'— check that the "videos" folder is next to index.html'));
+ card.addEventListener('click',e=>{
+  if(e.target.closest('.sound'))return;
+  if(video.paused){card.userPaused=false;video.play().catch(()=>{});}else{card.userPaused=true;video.pause();}
+ });
+ if(snd)snd.addEventListener('click',()=>{video.muted=!video.muted;snd.textContent=video.muted?'🔇':'🔊';if(!video.muted)video.play().catch(()=>{});});
+ card.tabIndex=0;
+ card.addEventListener('keydown',e=>{if(e.target===card&&(e.key==='Enter'||e.key===' ')){e.preventDefault();card.click();}});
+ card._play=play;
+});
+// If the browser blocked autoplay (e.g. battery saver), start on the first touch/scroll/click.
+['touchstart','pointerdown','scroll','keydown'].forEach(ev=>window.addEventListener(ev,()=>cards.forEach(c=>{const v=c.querySelector('video');if(v.paused&&!c.userPaused&&c._inView)c._play();}),{passive:true,once:false}));
+const vObserver=new IntersectionObserver(entries=>entries.forEach(en=>{
+ const card=en.target,video=card.querySelector('video');card._inView=en.isIntersecting;
+ if(en.isIntersecting){card._play();}else{video.pause();}
+}),{threshold:.2});
+cards.forEach(c=>vObserver.observe(c));
+const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('visible');observer.unobserve(entry.target);}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
